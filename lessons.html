@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LearnLocal | Lessons</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <a class="logo" href="index.html">
+        Learn<span>Local</span>
+    </a>
+
+    <nav class="nav">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a class="active" href="lessons.html">
+            Lessons
+        </a>
+
+        <a href="vocabulary.html">
+            Vocabulary
+        </a>
+
+        <a href="translator.html">
+            Translate
+        </a>
+
+        <a href="quiz.html">
+            Quiz
+        </a>
+
+        <a href="progress.html">
+            Progress
+        </a>
+
+        <a href="feedback.html">
+            Feedback
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="page">
+
+    <div class="page-heading">
+
+        <p class="eyebrow">
+            LEARN
+        </p>
+
+        <h1>
+            Lessons
+        </h1>
+
+        <p>
+            Learn useful words and everyday expressions
+            through simple lessons.
+        </p>
+
+    </div>
+
+
+    <div class="language-bar">
+
+        <label for="lessonLanguage">
+            Learning Language
+        </label>
+
+        <select id="lessonLanguage">
+
+            <option value="Marathi">
+                Marathi
+            </option>
+
+            <option value="Hindi">
+                Hindi
+            </option>
+
+            <option value="French">
+                French
+            </option>
+
+            <option value="Korean">
+                Korean
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <section
+        id="lessonGrid"
+        class="card-grid">
+    </section>
+
+
+    <section
+        id="lessonDetail"
+        class="lesson-detail hidden">
+
+        <button
+            class="back-button"
+            id="closeLesson"
+            type="button">
+
+            ← Back to Lessons
+
+        </button>
+
+
+        <p
+            class="eyebrow"
+            id="lessonNumber">
+        </p>
+
+
+        <h2 id="lessonTitle"></h2>
+
+
+        <p id="lessonDescription"></p>
+
+
+        <div
+            id="lessonWords"
+            class="word-list">
+        </div>
+
+
+        <button
+            class="button primary"
+            id="completeLesson"
+            type="button">
+
+            Mark Lesson Complete
+
+        </button>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <p>
+        LearnLocal • Educational Language Learning Project
+    </p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
