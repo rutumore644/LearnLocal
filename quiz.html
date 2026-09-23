@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LearnLocal | Quiz</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <a class="logo" href="index.html">
+        Learn<span>Local</span>
+    </a>
+
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="vocabulary.html">Vocabulary</a>
+        <a href="translator.html">Translate</a>
+        <a class="active" href="quiz.html">Quiz</a>
+        <a href="progress.html">Progress</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+
+</header>
+
+
+<main class="page">
+
+    <div class="page-heading">
+        <p class="eyebrow">TEST YOURSELF</p>
+
+        <h1>Vocabulary Quiz</h1>
+
+        <p>
+            Choose the correct translation and test your language skills.
+        </p>
+    </div>
+
+
+    <section class="quiz-card" id="quizCard">
+
+        <div class="quiz-top">
+
+            <span id="questionNumber">
+                Question 1 of 5
+            </span>
+
+            <span id="quizScore">
+                Score: 0
+            </span>
+
+        </div>
+
+
+        <div class="progress-line">
+            <span id="quizProgress"></span>
+        </div>
+
+
+        <h2 id="quizQuestion">
+            Loading question...
+        </h2>
+
+
+        <div id="quizOptions" class="quiz-options">
+        </div>
+
+
+        <p
+            id="quizFeedback"
+            class="quiz-feedback"
+            aria-live="polite">
+        </p>
+
+
+        <button
+            class="button primary"
+            id="nextQuestion"
+            type="button">
+
+            Check Answer
+
+        </button>
+
+    </section>
+
+
+    <section
+        class="result-card hidden"
+        id="quizResult">
+
+        <p class="eyebrow">
+            COMPLETED
+        </p>
+
+        <h2>Your Score</h2>
+
+        <strong id="finalScore">
+            0 / 5
+        </strong>
+
+        <p id="resultMessage">
+        </p>
+
+        <a
+            class="button primary"
+            href="quiz.html">
+
+            Try Again
+
+        </a>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <p>
+        LearnLocal • Educational Language Learning Project
+    </p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
