@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LearnLocal | Feedback</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+<header class="site-header">
+
+    <a class="logo" href="index.html">
+        Learn<span>Local</span>
+    </a>
+
+    <nav class="nav">
+
+        <a href="index.html">Home</a>
+
+        <a href="lessons.html">Lessons</a>
+
+        <a href="vocabulary.html">Vocabulary</a>
+
+        <a href="translator.html">Translate</a>
+
+        <a href="quiz.html">Quiz</a>
+
+        <a href="progress.html">Progress</a>
+
+        <a class="active" href="feedback.html">Feedback</a>
+
+    </nav>
+
+</header>
+
+
+<main class="page narrow">
+
+    <div class="page-heading">
+
+        <p class="eyebrow">
+            COMMUNITY FEEDBACK
+        </p>
+
+        <h1>
+            Tell Us What You Think
+        </h1>
+
+        <p>
+            Your feedback can help us improve the LearnLocal
+            language-learning experience.
+        </p>
+
+    </div>
+
+
+    <form class="form-card" id="feedbackForm">
+
+        <label for="feedbackName">
+            Name
+        </label>
+
+        <input
+            id="feedbackName"
+            name="name"
+            type="text"
+            placeholder="Enter your name"
+            required
+        >
+
+
+        <label for="rating">
+            How useful was the application?
+        </label>
+
+        <select
+            id="rating"
+            name="rating"
+            required
+        >
+
+            <option value="">
+                Select an option
+            </option>
+
+            <option>
+                Very useful
+            </option>
+
+            <option>
+                Useful
+            </option>
+
+            <option>
+                Average
+            </option>
+
+            <option>
+                Needs improvement
+            </option>
+
+        </select>
+
+
+        <label for="favoriteFeature">
+            Which feature did you like?
+        </label>
+
+        <select
+            id="favoriteFeature"
+            name="feature"
+            required
+        >
+
+            <option value="">
+                Select a feature
+            </option>
+
+            <option>
+                Lessons
+            </option>
+
+            <option>
+                Vocabulary
+            </option>
+
+            <option>
+                Speak & Translate
+            </option>
+
+            <option>
+                Quiz
+            </option>
+
+            <option>
+                Progress
+            </option>
+
+        </select>
+
+
+        <label for="suggestions">
+            Suggestions
+        </label>
+
+        <textarea
+            id="suggestions"
+            name="suggestions"
+            rows="6"
+            placeholder="Write your suggestions here..."
+            required
+        ></textarea>
+
+
+        <button
+            class="button primary"
+            type="submit"
+        >
+            Submit Feedback
+        </button>
+
+
+        <p
+            id="feedbackMessage"
+            class="status"
+            aria-live="polite"
+        ></p>
+
+    </form>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <p>
+        LearnLocal • Educational Language Learning Project
+    </p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
