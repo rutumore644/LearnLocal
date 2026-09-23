@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LearnLocal | Translate</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <a class="logo" href="index.html">
+        Learn<span>Local</span>
+    </a>
+
+    <nav class="nav">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="lessons.html">
+            Lessons
+        </a>
+
+        <a href="vocabulary.html">
+            Vocabulary
+        </a>
+
+        <a class="active" href="translator.html">
+            Translate
+        </a>
+
+        <a href="quiz.html">
+            Quiz
+        </a>
+
+        <a href="progress.html">
+            Progress
+        </a>
+
+        <a href="feedback.html">
+            Feedback
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="page">
+
+    <div class="page-heading">
+
+        <p class="eyebrow">
+            SPEAK • TRANSLATE • LEARN
+        </p>
+
+        <h1>
+            Speak & Translate
+        </h1>
+
+        <p>
+            Type a word or use the microphone to practice
+            language translation.
+        </p>
+
+    </div>
+
+
+    <section class="translator-card">
+
+
+        <div class="language-row">
+
+            <label>
+
+                From
+
+                <select id="sourceLanguage">
+
+                    <option value="English">
+                        English
+                    </option>
+
+                    <option value="Marathi">
+                        Marathi
+                    </option>
+
+                    <option value="Hindi">
+                        Hindi
+                    </option>
+
+                    <option value="French">
+                        French
+                    </option>
+
+                    <option value="Korean">
+                        Korean
+                    </option>
+
+                </select>
+
+            </label>
+
+
+            <button
+                id="swapLanguages"
+                class="swap-button"
+                type="button">
+
+                ↔
+
+            </button>
+
+
+            <label>
+
+                To
+
+                <select id="targetLanguage">
+
+                    <option value="Marathi">
+                        Marathi
+                    </option>
+
+                    <option value="Hindi">
+                        Hindi
+                    </option>
+
+                    <option value="English">
+                        English
+                    </option>
+
+                    <option value="French">
+                        French
+                    </option>
+
+                    <option value="Korean">
+                        Korean
+                    </option>
+
+                </select>
+
+            </label>
+
+        </div>
+
+
+        <label
+            class="field-label"
+            for="translateInput">
+
+            Enter a word or sentence
+
+        </label>
+
+
+        <textarea
+            id="translateInput"
+            rows="6"
+            placeholder="Example: Hello">
+        </textarea>
+
+
+        <div class="button-row">
+
+            <button
+                class="button primary"
+                id="translateButton"
+                type="button">
+
+                Translate
+
+            </button>
+
+
+            <button
+                class="button secondary"
+                id="speakButton"
+                type="button">
+
+                🎤 Speak
+
+            </button>
+
+
+            <button
+                class="button ghost"
+                id="clearButton"
+                type="button">
+
+                Clear
+
+            </button>
+
+        </div>
+
+
+        <p
+            id="speechStatus"
+            class="status"
+            aria-live="polite">
+        </p>
+
+
+        <div class="translation-result">
+
+
+            <div>
+
+                <span class="result-label">
+                    Translation
+                </span>
+
+                <h2 id="translationResult">
+                    —
+                </h2>
+
+            </div>
+
+
+            <div>
+
+                <span class="result-label">
+                    Pronunciation
+                </span>
+
+                <p id="pronunciationResult">
+                    —
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <span class="result-label">
+                    Meaning
+                </span>
+
+                <p id="meaningResult">
+                    —
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <p class="note">
+
+        This prototype currently uses the vocabulary
+        stored in the application.
+
+    </p>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <p>
+        LearnLocal • Educational Language Learning Project
+    </p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
